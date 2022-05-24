@@ -2,6 +2,14 @@ $accent: #fe3e57;
 $default: #b7b7b7;
 $title:#605f63;
 $bg:#f6f6f6; 
+$text: #8d8d8d;
+%btn{
+    background-color: $accent;
+    text-transform: uppercase;
+    padding: 15px 36px;
+    @extend %roboto-400;
+    color: #fff;
+}
 
 
 
