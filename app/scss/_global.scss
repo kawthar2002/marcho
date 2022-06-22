@@ -25,3 +25,27 @@ a {
     color: $default;
     text-decoration: none;
 }
+.title {
+    text-transform: uppercase;
+    font-size: 48px;
+    line-height: 26px;
+    @extend %roboto-700;
+    color: #29282d;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.text {
+    font-size: 16px;
+    @extend %quicksand-500;
+    text-align: center;
+    max-width: 540px;
+    margin: 0 auto 60px;
+}
+.subtitle {
+    font-size: 22px;
+    line-height: 26px;
+    color: #fe3e57;
+    text-transform: uppercase;
+    @extend %quicksand-500;
+    margin-bottom: 20px;
+}

@@ -141,6 +141,7 @@
     background-size: contain;
     background-position: center center ;
     padding: 65px 0 45px;
+    margin-bottom: 110px;
     &__container {
         max-width: 1560px;
     }
@@ -208,6 +209,189 @@
         }
     }
 }
+.categories-info {
+    margin-bottom: 115px;
+    background-image: url(../img/categories/left.svg);
+    background-repeat: no-repeat;
+    background-position: center left;
+    &__inner {
+        background-image: url(../img/categories/right.svg);
+        background-repeat: no-repeat;
+        background-position: center right;
+    }
+}
+.categories-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    min-height: 635px;
+    grid-gap: 30px; 
+}
+.categories-item {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 30px 40px;
+    &:nth-child(1) {
+        grid-row: span 2;
+        .categories-item__subtitle,
+        .categories-item__link:hover {
+            color: #5800e4;
+        }
+    }
+    &:nth-child(2) {
+        grid-column: span 2;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 40px;
+        .categories-item__subtitle,
+        .categories-item__link:hover {
+            color: $accent;
+        }
+    }
+    &:nth-child(3) {
+        .categories-item__subtitle,
+        .categories-item__link:hover {
+            color: #ffcb5b;
+        }
+    }
+    &:nth-child(4) {
+        .categories-item__subtitle,
+        .categories-item__link:hover {
+            color: #4dc8fc;
+        }
+    }
+    &__subtitle {
+        font-size: 14px;
+        @extend %quicksand-500;
+        margin-bottom: 10px;
+    }
+    &__title {
+        font-size: 22px;
+        @extend %roboto-500;
+        color: #29282d;
+        margin-bottom: 16px;
+    }
+    &__link {
+        @extend %roboto-400;
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #29282d;
+        max-width: 130px;
+        padding-bottom: 6px;
+        &:hover {
+            border-bottom: 1px solid;
+        }
+    }
+    
+} 
+
+.info {
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 40px;
+    position: relative;
+    &::before,
+    &::after {
+        background-repeat: no-repeat;
+        position: absolute;
+        z-index: -1;
+    }
+    &::before {
+        content: url('../img/categories/circle.svg');
+        top: -40px;
+        left: -45px;
+    }
+    &::after {
+        content: url('../img/categories/dots.svg');
+        bottom: -30px;
+        right: -40px;
+    }
+    &-item svg {
+        margin-bottom: 30px;
+    }
+    &-item {
+        background-color: #fff;
+        box-shadow: 20px 0px 60px 0px rgba(202, 202, 202, 0.35);
+        padding: 58px 42px;
+        min-width: 370px;
+        &__title {
+            color: #29282d;
+            @extend %roboto-400;
+            font-size: 22px;
+            margin-bottom: 15px;
+        }     
+    }
+}
+.video {
+    background-image: url(../img/video/pattern.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 120px 0;
+    &__inner {
+        display: flex;
+    }
+    &-popup {
+        min-width: 530px;
+        min-height: 470px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 60px;
+        background-image: url(../img/video/preview.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        &__link {
+            cursor: pointer;
+        }
+    }
+    &-content {
+        max-width: 570px;
+        padding: 80px 0;
+        &__title {
+            text-align: left;
+            margin-bottom: 40px;
+        }
+        &__text {
+            text-align: left;   
+        }
+        &__link {
+            @extend %btn;
+            box-shadow: 0px 7px 20px 0px rgba(255, 17, 48, 0.3); 
+            cursor: pointer;
+        }
+    }
+}
+.popup {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    inset: 0;
+    padding: 100px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+    &.displayed {
+        display: flex;
+        align-items: center;
+    }
+    &-inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+   
+}
+
+
+
 
 .footer-bottom {
     height: 75px;
