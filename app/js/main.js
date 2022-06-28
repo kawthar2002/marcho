@@ -49,7 +49,7 @@ function getTimeRemaining(endtime) {
   }
    
   function initializeClock(id, endtime) {
-    const clock = document.getElementById(id);
+    const clock = document.querySelector('.countdown');
     const daysSpan = clock.querySelector('.days');
     const hoursSpan = clock.querySelector('.hours');
     const minutesSpan = clock.querySelector('.minutes');
@@ -71,5 +71,5 @@ function getTimeRemaining(endtime) {
     updateClock();
     const timeinterval = setInterval(updateClock, 1000);
   }
-    const deadline="July 26 2022 22:00:00 GMT+0300";
-    initializeClock('countdown', deadline);
+    const deadline= $('.countdown').attr('data-time');
+    initializeClock('.countdown', deadline);
