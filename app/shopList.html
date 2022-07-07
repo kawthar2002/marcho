@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcho</title>
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a class="logo" href="#">
+                   <img class="logo__img" src="img/logo.png" alt="logo"> 
+                </a>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__list-item">
+                            <a href="" class="menu__list-link menu__list-link--active">
+                                home
+                            </a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a href="" class="menu__list-link">
+                                shop
+                            </a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a href="" class="menu__list-link">
+                                page
+                            </a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a href="" class="menu__list-link">
+                                blog
+                            </a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a href="" class="menu__list-link">
+                                contact
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="user-nav">
+                    <a href="#" class="user-nav__link">
+                      <img class="user-nav__link-img" src="img/icons/user.svg" alt="user">
+                    </a>
+                    <a href="#" class="user-nav__link">
+                        <img class="user-nav__link-img"  src="img/icons/search.svg" alt="search">
+                    </a> 
+                    <a href="#" class="user-nav__link">
+                        <img class="user-nav__link-img"  src="img/icons/heart.svg" alt="heart">
+                        <div class="user-nav__num">3</div>
+                    </a>
+                    <a href="#" class="user-nav__link">
+                        <img class="user-nav__link-img"  src="img/icons/cart.svg" alt="cart">
+                        <div class="user-nav__num">7</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="top">
+            <div class="top-container">
+                <h2 class="top-container__title title">
+                    SHOP PAGE
+                </h2>
+                <div class="breadcrumbs">
+                    <ul class="breadcrumbs-list">
+                        <li class="breadcrumbs-list__item">
+                            <a href="#" class="breadcrumbs-list__link">
+                                Home
+                            </a>
+                        </li>
+                        <li class="breadcrumbs-list__item">
+                            <a href="#" class="breadcrumbs-list__link">
+                                Shop Page
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="display">
+            <div class="display-container">
+                <div class="display-inner">
+                    <sidebar class="display-filters">
+                        <div class="display-filter">
+                            <h3 class="display-filter__title">
+                                Search
+                            </h3>
+                            <form class="display-filter__form">
+                                <input type="text" class="display-filter__input" placeholder="Search your keyword....">
+                                <button class="display-filter__btn">
+                                    <img src="img/display/search.svg" alt="search">
+                                </button>
+                            </form> 
+                        </div>
+                        <div class="display-filter">
+                            <h3 class="display-filter__title">
+                                Price Filter
+                            </h3>
+                            <form class="display-filter__form-price">
+                                <div class="display-filter__slider">
+                                    <div class="display-filter__progress"></div>
+                                    <div class="display-filter__pointer display-filter__pointer-one"></div>
+                                    <div class="display-filter__pointer display-filter__pointer-two"></div>
+                                </div>
+                                <div class="display-filter__price">
+                                    <p class="display-filter__text">
+                                        Price: $0 - $999
+                                    </p>
+                                    <button class="display-filter__btn filter__btn">
+                                        filter
+                                    </button>
+                                </div>
+                            </form> 
+                        </div>
+                        <div class="display-filter">
+                            <h3 class="display-filter__title">
+                                Color Filter
+                            </h3>
+                            <form action="#" class="filter-color">
+                                <label class="filter-color__label">
+                                    <span class="filter-color__text">Blue (15)</span>
+                                    <div class="filter-color__box">
+                                        <input type="checkbox" class="filter-color__input" checked>
+                                        <span class="filter-color__span">
+                                            <svg 
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                width="16px" height="16px">
+                                                <path fill-rule="evenodd"  fill="rgb(0, 174, 239)"
+                                                d="M0.0,0.0 L15.999,0.0 L15.999,15.999 L0.0,15.999 L0.0,0.0 Z"/>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </label>
+                                <label class="filter-color__label">
+                                    <span class="filter-color__text">Red (09)</span>
+                                    <div class="filter-color__box">
+                                        <input type="checkbox" class="filter-color__input" checked>
+                                        <span class="filter-color__span">
+                                            <svg 
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                width="16px" height="16px">
+                                                <path fill-rule="evenodd"  fill="rgb(245, 37, 116)"
+                                                d="M0.0,0.0 L15.999,0.0 L15.999,15.999 L0.0,15.999 L0.0,0.0 Z"/>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </label>
+                                <label class="filter-color__label">
+                                    <span class="filter-color__text">Green (28)</span>
+                                    <div class="filter-color__box">
+                                        <input type="checkbox" class="filter-color__input" checked>
+                                        <span class="filter-color__span">
+                                            <svg 
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                width="16px" height="16px">
+                                                <path fill-rule="evenodd"  fill="rgb(36, 212, 172)"
+                                                d="M0.0,0.0 L15.999,0.0 L15.999,15.999 L0.0,15.999 L0.0,0.0 Z"/>
+                                           </svg>
+                                        </span>
+                                    </div>
+                                </label>
+                                <label class="filter-color__label">
+                                    <span class="filter-color__text">Orange (11)</span>
+                                    <div class="filter-color__box">
+                                        <input type="checkbox" class="filter-color__input" checked>
+                                        <span class="filter-color__span">
+                                            <svg 
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                width="16px" height="16px">
+                                                <path fill-rule="evenodd"  fill="rgb(255, 126, 0)"
+                                                d="M0.0,0.0 L15.999,0.0 L15.999,15.999 L0.0,15.999 L0.0,0.0 Z"/>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </label>
+                                <label class="filter-color__label">
+                                    <span class="filter-color__text">Black (05)</span>
+                                    <div class="filter-color__box">
+                                        <input type="checkbox" class="filter-color__input" checked>
+                                        <span class="filter-color__span">
+                                            <svg 
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                width="16px" height="16px">
+                                                <path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
+                                                d="M0.0,0.0 L15.999,0.0 L15.999,15.999 L0.0,15.999 L0.0,0.0 Z"/>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </label>
+                                <label class="filter-color__label filter-color__label--none ">
+                                    <span class="filter-color__text">Purple (21)</span>
+                                    <div class="filter-color__box">
+                                        <input type="checkbox" class="filter-color__input" checked>
+                                        <span class="filter-color__span">
+                                            <svg 
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                width="16px" height="16px">
+                                                <path fill-rule="evenodd"  fill="rgb(146, 56, 153)"
+                                                d="M0.0,0.0 L15.999,0.0 L15.999,15.999 L0.0,15.999 L0.0,0.0 Z"/>
+                                           </svg>
+                                        </span>
+                                    </div>
+                                </label>
+                            </form>
+                        </div>
+                        <div class="display-filter">
+                            <h3 class="display-filter__title">
+                                Size Filter
+                            </h3>
+                            <form action="#" class="filter-size">
+                                <label class="filter-size__label">
+                                    <div class="filter-size__box">
+                                        <input type="checkbox" class="filter-size__input" checked>
+                                        <span class="filter-size__span"></span>
+                                        <span class="filter-size__text">X-small</span>
+                                    </div>
+                                </label>
+                                <label class="filter-size__label">
+                                    <div class="filter-size__box">
+                                        <input type="checkbox" class="filter-size__input">
+                                        <span class="filter-size__span"></span>
+                                        <span class="filter-size__text">Small</span>
+                                    </div>
+                                </label>
+                                <label class="filter-size__label">
+                                    <div class="filter-size__box">
+                                        <input type="checkbox" class="filter-size__input">
+                                        <span class="filter-size__span"></span>
+                                        <span class="filter-size__text">Medium</span>
+                                    </div>
+                                </label>
+                                <label class="filter-size__label">
+                                    <div class="filter-size__box">
+                                        <input type="checkbox" class="filter-size__input">
+                                        <span class="filter-size__span"></span>
+                                        <span class="filter-size__text">Large</span>
+                                    </div>
+                                </label>
+                            <label class="filter-size__label">
+                                <div class="filter-size__box">
+                                    <input type="checkbox" class="filter-size__input">
+                                    <span class="filter-size__span"></span>
+                                    <span class="filter-size__text">XXL</span>
+                                </div>
+                            </label>
+                        </form>
+                        </div>
+                        <div class="display-filter">
+                            <h3 class="display-filter__title">CATEGORY</h3>
+                            <form action="#" class="filter-category__form">
+                                <label class="filter-category__label">
+                                    <input type="checkbox" class="filter-category__input">
+                                    <div class="filter-category__spans">
+                                        <span class="filter-category__text">Woman</span>
+                                        <span class="filter-category__text">48</span>
+                                    </div>
+                                </label>
+                                <label class="filter-category__label">
+                                    <input type="checkbox" class="filter-category__input">
+                                    <div class="filter-category__spans">
+                                        <span class="filter-category__text">Man</span>
+                                        <span class="filter-category__text">30</span>
+                                    </div>
+                                </label>
+                                <label class="filter-category__label">
+                                    <input type="checkbox" class="filter-category__input" checked>
+                                    <div class="filter-category__spans">
+                                        <span class="filter-category__text">Fashion</span>
+                                        <span class="filter-category__text">121</span>
+                                    </div>
+                                </label>
+                                <label class="filter-category__label">
+                                    <input type="checkbox" class="filter-category__input">
+                                    <div class="filter-category__spans">
+                                        <span class="filter-category__text">Hot Dresses</span>
+                                        <span class="filter-category__text">52</span>
+                                    </div>
+                                </label>
+                                <label class="filter-category__label">
+                                    <input type="checkbox" class="filter-category__input">
+                                    <div class="filter-category__spans">
+                                        <span class="filter-category__text">Accessories</span>
+                                        <span class="filter-category__text">88</span>
+                                    </div>
+                                </label>
+                            </form>
+                        </div>
+                        <div class="display-filter">
+                            <h3 class="display-filter__title">
+                                Popular Tags
+                            </h3>
+                            <form action="#" class="filter-tags">
+                                <label class="filter-tags__label">
+                                    <input type="checkbox" class="filter-tags__input">
+                                    <span class="filter-tags__text">
+                                        Sweetshirt
+                                    </span>
+                                </label>
+                                <label class="filter-tags__label">
+                                    <input type="checkbox" class="filter-tags__input" checked>
+                                    <span class="filter-tags__text">
+                                        Man Accessories
+                                    </span>
+                                </label>
+                                <label class="filter-tags__label">
+                                    <input type="checkbox" class="filter-tags__input">
+                                    <span class="filter-tags__text">
+                                        Fashion
+                                    </span>
+                                </label>
+                                <label class="filter-tags__label">
+                                    <input type="checkbox" class="filter-tags__input">
+                                    <span class="filter-tags__text">
+                                        Polo
+                                    </span>
+                                </label>
+                                <label class="filter-tags__label">
+                                    <input type="checkbox" class="filter-tags__input">
+                                    <span class="filter-tags__text">
+                                        T-Shirt
+                                    </span>
+                                </label>
+                                <label class="filter-tags__label">
+                                    <input type="checkbox" class="filter-tags__input">
+                                    <span class="filter-tags__text">
+                                        Jewellery
+                                    </span>
+                                </label>
+                            </form>
+                        </div>
+                    </sidebar>
+                    <nav class="display-navigation"></nav>
+                    <div class="display-items"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-top__item footer-top__contact">
+                    <a class="logo" href="#">
+                        <img class="logo__img footer-top__logo" src="img/logo.png" alt="logo"> 
+                     </a>
+                     <a href="#" class="footer-top__address">
+                        No. 342 - London Oxford Street,012 United States
+                     </a>
+                     <a href="mailto:Youremail@gmail.com" class="footer-top__email">
+                        Youremail@gmail.com
+                     </a>
+                     <a href="tel:+02838388393" class="footer-top__phone">+0283 838 8393</a>
+                     <ul class="footer-top__social-list">
+                        <li class="footer-top__social-item">
+                            <a href="" class="footer-top__social-link">
+                                <img src="img/icons/fb.png" alt="fb">
+                            </a>
+                        </li>
+                        <li class="footer-top__social-item">
+                            <a href="" class="footer-top__social-link">
+                                <img src="img/icons/tw.png"  alt="tw">
+                            </a>
+                        </li>
+                        <li class="footer-top__social-item">
+                            <a href="" class="footer-top__social-link">
+                                <img src="img/icons/in.png" alt="in">
+                            </a>
+                        </li>
+                        <li class="footer-top__social-item">
+                            <a href="" class="footer-top__social-link">
+                                <img src="img/icons/g.png" alt="g">
+                            </a>
+                        </li>
+                        <li class="footer-top__social-item">
+                            <a href="" class="footer-top__social-link">
+                                <img src="img/icons/p.png" alt="p">
+                            </a>
+                        </li>
+                     </ul>
+                </div>
+                <div class="footer-top__item footer-top__nav">
+                    <h6 class="footer-top__title">
+                        Useful Links
+                    </h6>
+                    <ul class="footer-top__list">
+                        <li class="footer-top__item">
+                            <a href="#" class="footer-top__link">
+                                My Account
+                            </a>
+                        </li>
+                        <li class="footer-top__item">
+                            <a href="#" class="footer-top__link">
+                                My Cart
+                            </a>
+                        </li>
+                        <li class="footer-top__item">
+                            <a href="#" class="footer-top__link">
+                                My WIshlist
+                            </a>
+                        </li>
+                        <li class="footer-top__item">
+                            <a href="#" class="footer-top__link">
+                                Registration
+                            </a>
+                        </li>
+                        <li class="footer-top__item">
+                            <a href="#" class="footer-top__link">
+                                Check Out
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-top__item footer-top__nav">
+                    <h6 class="footer-top__title">
+                        My Account
+                    </h6>
+                    <ul class="footer-top__list">
+                        <li class="footer-top__item">
+                            <a href="#" class="footer-top__link">
+                                About Us
+                            </a>
+                        </li>
+                        <li class="footer-top__item">
+                            <a href="#" class="footer-top__link">
+                                Privacy Policy
+                            </a>
+                        </li>
+                        <li class="footer-top__item">
+                            <a href="#" class="footer-top__link">
+                                Terms & Conditions
+                            </a>
+                        </li>
+                        <li class="footer-top__item">
+                            <a href="#" class="footer-top__link">
+                                Contact Us
+                            </a>
+                        </li>
+                        <li class="footer-top__item">
+                            <a href="#" class="footer-top__link">
+                                Help & Support
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-top__item footer-top__item-form">
+                    <h6 class="footer-top__title">
+                        Subscribe Our Newsletter
+                    </h6>
+                    <p class="footer-top__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Quis ipsum suspendisse ultrices gravida.
+                    </p>
+                    <form class="footer-top__form" action="#">
+                        <input  class="footer-top__form-input" type="email" placeholder="Your email address" required>
+                        <button class="footer-top__form-btn" type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-bottom__copy">
+                    © 2019 CodeAstrology. All Rights Reserved.
+                </p>
+                <div class="footer-bottom__accept">
+                    We Accept
+                    <img class="footer-bottom__accept-img" src="img/icons/mc.png" alt="accept">
+                    <img class="footer-bottom__accept-img" src="img/icons/visa.png" alt="accept">
+                    <img class="footer-bottom__accept-img" src="img/icons/paypal.png" alt="accept">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.min.js"></script>
+</body>
+</html>

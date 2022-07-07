@@ -73,3 +73,6 @@ function getTimeRemaining(endtime) {
   }
     const deadline= $('.countdown').attr('data-time');
     initializeClock('.countdown', deadline);
+
+  
+
