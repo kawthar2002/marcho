@@ -21,7 +21,9 @@
     "sass": "^1.49.10"
   },
   "dependencies": {
+    "jquery-form-styler": "^2.0.2",
     "node-sass": "^7.0.1",
+    "rangeslider.js": "^2.3.3",
     "slick-carousel": "^1.8.1"
   }
 }

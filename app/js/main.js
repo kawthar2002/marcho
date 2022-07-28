@@ -1,4 +1,17 @@
 $(function () {
+  
+
+  $('.button-list').on('click', function() {
+    $('.products-item').addClass('.products-item--list');
+  });
+  $('.button-grid').on('click', function() {
+    $('.products-item').removeClass('.products-item--list');
+  });
+  $('.display-content__filter-btn').on('click', function() {
+    $('.display-content__filter-btn').removeClass('display-content__filter-btn--active');
+    $(this).addClass('display-content__filter-btn--active');
+  });
+  $('select').styler();
   $(".top-slider__inner").slick({
     dots: true,
     arrows: false,
@@ -73,6 +86,3 @@ function getTimeRemaining(endtime) {
   }
     const deadline= $('.countdown').attr('data-time');
     initializeClock('.countdown', deadline);
-
-  
-
